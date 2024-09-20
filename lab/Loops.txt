@@ -1,6 +1,6 @@
 Printing out numbers!
 
-Your will outprogram a set of numbers from 0 - 100 based on a single digit input from the user.
+Your will output a set of numbers from 0 - 100 based on a single digit input from the user.
 
 Example:
 
