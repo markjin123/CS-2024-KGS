@@ -1,0 +1,17 @@
+Printing out numbers!
+
+Your will output a set of numbers from 0 - 100 based on a single digit input from the user.
+
+Example:
+
+Input: 7
+Output: 7,17,27,37,47,57,67,77,87,97
+
+Input: 0
+Output: 10,20,30,40,50,60,70,80,90,100
+
+Input: 1
+Output: 1,11,21,31,41,51,61,71,81,91
+
+
+The user will only be allowed to enter a single digit input so you can assume all other input are invalid.
