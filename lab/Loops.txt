@@ -1,17 +1,28 @@
-Printing out numbers!
+import java.util.Scanner;
 
-Your will output a set of numbers from 0 - 100 based on a single digit input from the user.
-
-Example:
-
-Input: 7
-Output: 7,17,27,37,47,57,67,77,87,97
-
-Input: 0
-Output: 10,20,30,40,50,60,70,80,90,100
-
-Input: 1
-Output: 1,11,21,31,41,51,61,71,81,91
-
-
-The user will only be allowed to enter a single digit input so you can assume all other input are invalid.
+public class Main {
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Enter a single digit number (0-9): ");
+        String input = scanner.next();
+        
+        if (input.matches("[0-9]")) {
+            int userInput = Integer.parseInt(input);
+            
+            for (int i = 0; i <= 100; i++) {
+                if (i % 10 == userInput) {
+                    System.out.print(i);
+                    
+                    if (i != 100 && i != userInput + 90) {
+                        System.out.println(", ");
+                    }
+                }
+            }
+        } else {
+            System.out.println("Invalid input. Enter a single digit number between 0 and 9.");
+        }
+        
+        scanner.close();
+    }
+}
